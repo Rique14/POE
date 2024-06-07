@@ -8,6 +8,12 @@ Code for POE: Recipe App
 4. Set the `MainWindow.xaml` as the startup object.
 5. Run the application.
 ## Github Repository
-Find the code for this project on (https://github.com/Rique14/ProgPart_2).
+Find the code for this project on (https://github.com/Rique14/POE).
 ## Changes   
-The changes made for Part2 include implementing the ability for the user to enter an unlimited number of recipes with names, displaying a list of recipes in alphabetical order, following the user to choose a recipe from the list, adding the option for the user to enter calories and food group for each ingredient, calculating and displaying the total calories of a recipe, notifying the user when a recipe exceeds 300 calories using a delegate and using generic collections and classes to store data instead of arrays. Additionally, a unit test was created to verify the accuracy of the total calorie culculation. These changes enchance the functionality, organization and usability of the application according to the provided reuirements and coding standards.
+Based on feedback from the lecturer, the following changes were made:
+- Implemented a graphical user interface using WPF.
+- Added features for filtering recipes by ingredient, food group, or calories.
+- Included the option to select multiple recipes and display a pie chart of the food group distribution.
+- Implemented scaling options for food groups (0.5, 2, or 3).
+- Created a README file, added a link to the GitHub repository, and provided instructions for compiling and running the software.
+
