@@ -1,0 +1,35 @@
+﻿<Window x:Class="POE.AddRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="AddRecipeWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Recipe Name:"/>
+            <TextBox Name="RecipeNameTextBox"/>
+
+            <TextBlock Text="Ingredients:" Margin="0,10,0,0"/>
+            <ListBox Name="IngredientsListBox" Height="100"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="IngredientTextBox" Width="100" Text="Ingredient"/>
+                <TextBox Name="QuantityTextBox" Width="50" Text="Qty"/>
+                <TextBox Name="UnitTextBox" Width="50" Text="Unit"/>
+                <TextBox Name="CaloriesTextBox" Width="50" Text="Calories"/>
+                <TextBox Name="FoodGroupTextBox" Width="100" Text="Food Group"/>
+                <Button Content="Add" Click="AddIngredientButton_Click"/>
+            </StackPanel>
+
+            <TextBlock Text="Steps:" Margin="0,10,0,0"/>
+            <ListBox Name="StepsListBox" Height="100"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="StepTextBox" Width="200" Text="Step"/>
+                <Button Content="Add" Click="AddStepButton_Click"/>
+            </StackPanel>
+
+            <Button Content="Save Recipe" Click="SaveRecipeButton_Click" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
